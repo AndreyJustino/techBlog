@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onresize="rta()">
+    <header class="header">
+        <h1 class="title-tech">TechNews - Blog</h1>
+
+        <!-- button mobile open menu -->
+        <div class="btn-abrir" id="btn-abrir">
+            <img src="img\menu_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="menu" class="menu" />
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+
+            <!-- button mobile close menu -->
+            <div class="btn-fechar" id="btn-fechar">
+                <img src="img\close_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="close" />
+            </div>
+
+            <nav class="nav-mobile" id="nav-mobile">
+                <ul>
+                    <li>
+                        <a href="./index.html">Pagina Inicial</a></li>
+                    <li>
+                        <a href="#" target="_blank">Para você</a></li>
+                    <li>
+                        <a href="#" target="_blank">Mais recentes</a></li>
+                    <li>
+                        <a href="#">Brasil</a></li>
+                    <li>
+                        <a href="#">Mundo</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="overlay-menu" id="overlay-menu"></div>
+
+        <nav class="nav-desktop">
+            <ul>
+                <li>
+                    <a href="./index.html">Pagina Inicial</a></li>
+                <li>
+                    <a href="#" target="_blank">Para você</a></li>
+                <li>
+                    <a href="#" target="_blank">Mais recentes</a></li>
+                <li>
+                    <a href="#">Brasil</a></li>
+                <li>
+                    <a href="#">Mundo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main-news">
+
+            <div class="moldura">
+                <img src="./img/thumbsDeepSeek.webp" alt="imagem deepseek">
+            </div>
+
+            <div class="content-main-text">
+                <h1>
+                    DeepSeek levanta suspeitas em Portugal. Proteção de Dados avalia a atividade da startup chinesa
+                </h1>
+
+                <p>
+                    A Comissão Nacional de Proteção de Dados (CNPD) está a analisar a atividade da DeepSeek. Ainda no final de janeiro, a DECO Proteste avançou com uma queixa junto da entidade, afirmando que o tratamento de dados feito pela startup chinesa não está em conformidade com o RGPD. 
+                </p>
+
+                <a href="#">Leia mais</a>
+            </div>
+
+
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
