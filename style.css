@@ -59,7 +59,7 @@ html {
 }
 
 .nav-mobile ul li a:hover {
-    background-color: #00ff77;
+    background-color: #d8d8d8;
     color: #000000;
     font-weight: 600;
 }
@@ -152,9 +152,7 @@ body{
     width: 100%;
 }
 
-
 .main{
-    border: red solid 2px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -163,15 +161,11 @@ body{
 }
 
 .main-news{
-    /* border: 2px solid purple; */
-    
     width: 90vw;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5%;
-    flex-wrap: wrap;
     align-content: space-between;
     
     
@@ -213,16 +207,36 @@ body{
 
 @media screen and (min-width: 796px){
     .main-news{
-        
-        /* width: 90vw;
-        height: 70vh; */
-        display: flex;
-        /* flex-direction: row; */
-        /* align-items: center;
-        gap: 5%;
-        flex-wrap: wrap;
-        align-content: space-between; */
-        
-        
+        flex-direction: row;
+        flex-wrap: nowrap;
+               
+    }
+    
+}
+
+@media screen and (min-width: 1000px){
+    .main-news .content-main-text h1{
+        font-size: 2rem;
+    }
+    
+    .main-news .content-main-text p,
+    .main-news .content-main-text a{
+        font-size: 1.8rem;
+    }
+
+    .main-news .content-main-text,
+    .main-news .moldura{
+        width: 900px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main-news .content-main-text h1{
+        font-size: 25px;
+    }
+    
+    .main-news .content-main-text p,
+    .main-news .content-main-text a{
+        font-size: 20px;
     }
 }
