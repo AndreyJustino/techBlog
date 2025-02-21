@@ -60,3 +60,11 @@ function rta() { // recurso técnico alternativo
 window.addEventListener("load", () => {
     rta()
 })
+
+const learnMore = document.getElementById("learn-more");
+
+learnMore.addEventListener("click", () => {
+  const container = document.getElementById("container-more-news")
+  container.style.display = "flex"
+  learnMore.style.display = "none"
+})

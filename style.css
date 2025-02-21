@@ -321,6 +321,12 @@ body {
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 500px) {
+  .card-new:hover{
+    transform: scale(1);
+  }
+}
+
 #container-more-news {
   display: none;
 }
