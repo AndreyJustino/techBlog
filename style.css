@@ -165,6 +165,7 @@ body {
   align-items: center;
   gap: 5%;
   align-content: space-between;
+  margin-bottom: 20px;
 }
 
 .main-news .content-main-text,
