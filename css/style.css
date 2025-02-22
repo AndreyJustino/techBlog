@@ -11,141 +11,8 @@ html {
   font-size: 62.5%;
 }
 
-.header {
-  background-color: #ffffff;
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.title-tech {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  margin: 10px;
-  font-size: 2.5rem;
-}
-
-.menu-mobile {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 5;
-  width: 70vw;
-  display: none;
-}
-
-.nav-mobile {
-  text-align: right;
-  background-color: #f1f2f3;
-  height: 100vh;
-}
-
-.nav-mobile ul {
-  list-style: none;
-}
-
-.nav-mobile ul li a {
-  color: #000000;
-  font-size: 2rem;
-  text-decoration: none;
-  font-weight: 300;
-  padding: 20px 4%;
-  display: block;
-}
-
-.nav-mobile ul li a:hover {
-  background-color: #d8d8d8;
-  color: #000000;
-  font-weight: 600;
-}
-
-.menu-mobile .btn-fechar {
-  padding: 10px 4%;
-  background-color: #f1f2f3;
-}
-
-.btn-abrir {
-  margin: 10px;
-}
-
-.menu-mobile .btn-fechar img,
-.btn-abrir img {
-  width: 40px;
-  cursor: pointer;
-}
-
-.overlay-menu {
-  background-color: #0000008f;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 4;
-  display: none;
-}
-
-@media screen and (max-width: 795px) {
-  .header {
-    background-color: #ffffff;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-desktop {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 796px) {
-  .btn-abrir,
-  .menu-mobile,
-  .nav-mobile,
-  .btn-fechar,
-  .overlay-menu {
-    display: none;
-  }
-}
-
 body {
   background-color: #f1f2f3;
-}
-
-.nav-desktop ul {
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  margin: 10px;
-}
-
-.nav-desktop ul li a {
-  color: #000000;
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-weight: 400;
-  position: relative;
-}
-
-.nav-desktop ul li a::after {
-  content: " ";
-  width: 0%;
-  height: 3px;
-  background-color: #ff0000;
-  position: absolute;
-  top: 17px;
-  left: 0;
-  transition: 0.5s;
-}
-
-.nav-desktop ul li a:hover::after {
-  width: 100%;
 }
 
 .main {
@@ -154,7 +21,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  border: 2px solid red;
   gap: 20px;
 }
 
@@ -165,7 +31,7 @@ body {
   align-items: center;
   gap: 5%;
   align-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .main-news .content-main-text,
