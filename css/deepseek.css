@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main{
+    min-height: 100vh;
+    border: 2px solid red;
+}
+
+.box-title{
+    /* border: 2px solid green; */
+    background-color: #0E1E32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+
+.box-title .container-moldura h1{
+    text-align: center;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.container-moldura{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 2px solid; */
+    width: 90vw;
+    max-width: 655px;
+    align-items: center;
+}
+
+.box-title .moldura{
+    width: 90vw;
+    max-width: 650px;
+    height: 50vh;
+    margin: 0 auto;
+    /* border: 2px solid purple; */
+}
+
+.box-title .moldura img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 555px) {
+    .box-title .moldura{
+    
+        height: 30vh;
+    }
+
+    .box-title .container-moldura h1{
+        font-size: 2rem;
+    }
+
+    .box-title{
+        height: 25vh;
+    }
+}
