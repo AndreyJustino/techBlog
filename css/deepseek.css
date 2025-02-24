@@ -10,18 +10,21 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    background-color: #f1f2f3;
+}
+
 .main{
     min-height: 100vh;
     border: 2px solid red;
 }
 
 .box-title{
-    /* border: 2px solid green; */
     background-color: #0E1E32;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
+    height: 300px;
 }
 
 .box-title .container-moldura h1{
@@ -41,23 +44,29 @@ html{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* border: 2px solid; */
     width: 90vw;
-    max-width: 655px;
+    max-width: 755px;
     align-items: center;
+    border: 2px solid blue;
 }
 
 .box-title .moldura{
     width: 90vw;
-    max-width: 650px;
+    max-width: 750px;
     height: 50vh;
     margin: 0 auto;
-    /* border: 2px solid purple; */
 }
 
 .box-title .moldura img{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 900px){
+    .box-title .moldura{
+        height: 25vh;
+        max-width: 650px;
+    }
 }
 
 @media screen and (max-width: 555px) {
@@ -73,4 +82,57 @@ html{
     .box-title{
         height: 25vh;
     }
+}
+
+.new-texts{
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+}
+
+.new-texts .container-new-texts{
+    width: 70vw;
+    max-width: 800px;
+    border: 2px solid yellow;
+}
+
+.new-texts .container-new-texts p{
+    text-align: justify;
+    margin: 10px 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.new-texts .container-new-texts .author{
+    font-size: 1.3rem;
+}
+
+.new-texts .container-new-texts .texts h3{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.new-texts .container-new-texts .texts p{
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 900px){
+    .new-texts .container-new-texts{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .new-texts .container-new-texts{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .new-texts .container-new-texts .texts h3,
+    .new-texts .container-new-texts .texts p{
+        font-size: 1.4rem;
+    }
+    
 }
