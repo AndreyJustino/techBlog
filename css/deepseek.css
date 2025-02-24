@@ -16,7 +16,6 @@ body{
 
 .main{
     min-height: 100vh;
-    border: 2px solid red;
 }
 
 .box-title{
@@ -47,7 +46,6 @@ body{
     width: 90vw;
     max-width: 755px;
     align-items: center;
-    border: 2px solid blue;
 }
 
 .box-title .moldura{
@@ -85,7 +83,6 @@ body{
 }
 
 .new-texts{
-    border: 2px solid purple;
     display: flex;
     justify-content: center;
 }
@@ -93,7 +90,6 @@ body{
 .new-texts .container-new-texts{
     width: 70vw;
     max-width: 800px;
-    border: 2px solid yellow;
 }
 
 .new-texts .container-new-texts p{
@@ -130,9 +126,20 @@ body{
 }
 
 @media screen and (max-width: 700px){
-    .new-texts .container-new-texts .texts h3,
-    .new-texts .container-new-texts .texts p{
+    .new-texts .container-new-texts .texts h3{
         font-size: 1.4rem;
     }
+
+    .new-texts .container-new-texts .texts p{
+        font-size: 1.3rem;
+    }
     
+}
+
+.buttoReadMore{
+    text-align: center;
+}
+
+#texts{
+    display: none;
 }
