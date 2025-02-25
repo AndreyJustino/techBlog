@@ -143,3 +143,12 @@ body{
 #texts{
     display: none;
 }
+
+.new-texts .container-new-texts .texts ul{
+    font-size: 1.6rem; 
+    font-family: 'Poppins', serif; 
+    font-weight: 400; 
+    font-style: normal;
+    line-height: 30px;
+    margin: 10px 0px 25px 10px;
+}
